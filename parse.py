@@ -1,4 +1,9 @@
-classes = ['gameroom', 'masterbedroom', 'kitchen', 'smallbedroom']
+import sys
+
+if len(sys.argv) < 2:
+	sys.exit('Fewer arguments than expected')
+
+classes = sys.argv[1].split(',')
 train_ratio = 0.9
 
 wns = []
