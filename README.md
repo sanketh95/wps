@@ -25,12 +25,13 @@ python parse.py parse.py hall,kitchen,livingroom
 ```
 
 This script searches for the files hall.txt,kitchen.txt and livingroom.txt. Make sure the files exist.
-It considers an intersection of all access points available in the locations.
-That is, if an AP signal is absent at a location, then that AP's signal strength is not ignored from other locations.
 
-This also creates some meta files *fields.txt, train.txt and test.txt*.
+It considers an intersection of all access points available in the locations.
+That is, if an AP signal is absent at a location, then that AP's signal strength is ignored from other locations.
+
+This also creates some meta files *fields.txt*, *train.txt* and *test.txt*.
 As long as your individual location data has not changed, you need not run this step everytime. You can directly skip
-to training.
+to training. 
 
 ### Training
 
@@ -42,7 +43,7 @@ as well.
 python train.py
 ```
 
-### Predictions
+### Prediction
 
 Now you are all set to predict your location. This can be done using
 
