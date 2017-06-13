@@ -5,6 +5,19 @@ position based on the signal strengths of wireless access points.
 
 ## Quick start
 
+### Requirements
+* Linux
+* numpy - pip install numpy
+* pandas - pip install pandas
+* sklearn - pip install sklearn
+* nmcli - Most distributions ship with it
+
+### Download wps
+```sh
+git clone https://github.com/sanketh95/wps
+cd wps
+```
+
 ### Data collection
 
 Initially we collect data for signal strengths in various locations (This variance of these locations cannot be too high.
